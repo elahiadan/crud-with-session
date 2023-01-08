@@ -15,6 +15,7 @@
         <div class="p-5 text-center">
             <h1>CRUD With Session</h1>
             <p>CRUD Operations with session ( without using databse)</p>
+            <a href="{{ URL('product') }}">move to question 2</a>
         </div>
         <div class="row p-5">
             <div class="col-6">

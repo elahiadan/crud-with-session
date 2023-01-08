@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,9 @@ Route::post('store', [HomeController::class, 'store']);
 Route::get('edit/{id}', [HomeController::class, 'edit']);
 Route::post('update', [HomeController::class, 'update']);
 Route::get('destroy/{id}', [HomeController::class, 'destroy']);
+
+Route::get('product', [ProductController::class, 'index']);
+Route::post('product/store', [ProductController::class, 'store']);
+Route::get('product/edit/{id}', [ProductController::class, 'edit']);
+Route::post('product/update', [ProductController::class, 'update']);
+Route::get('product/destroy/{id}', [ProductController::class, 'destroy']);
